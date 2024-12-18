@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+       initial-scale=1.0">
+    <title>Advent of css 2024</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="h-screen w-full flex justify-center items-center">
+        <div class="relative group">
+            <h1 class="border-b-2 border-dashed text-5xl border-black">My Text</h1>
+            <div class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-2 rounded-md shadow-lg -top-14 left-1/2 -translate-x-1/2 hidden group-hover:block">
+                <p class="text-sm whitespace-nowrap">Tooltip</p>
+                <div class="absolute w-4 h-4 bg-black transform rotate-45 left-1/2 -translate-x-1/2 bottom-[-8px]"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
