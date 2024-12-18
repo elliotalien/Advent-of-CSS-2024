@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@supports (animation-timeline: scroll()) {
+    .scroll-indicator {
+        transform-origin: 0% 50%;
+        animation: grow-progress linear;
+        animation-timeline: scroll();
+    }
+    
+    @keyframes grow-progress {
+        from { transform: scaleX(0); }
+        to { transform: scaleX(1); }
+    }
+}
